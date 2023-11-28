@@ -1,0 +1,21 @@
+
+
+from_database:
+  name: database1
+  user: postgres
+  password: password123
+  host: localhost
+  port: 5432
+
+to_database:
+  name: database2
+  user: postgres
+  password: password123
+  host: localhost
+  port: 5432
+
+tables:
+  - name: users
+    column_transforms:
+      email:
+        type: email
